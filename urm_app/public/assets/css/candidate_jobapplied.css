@@ -1,0 +1,301 @@
+/* 
+Gunasekharan, Jayasurya     - 1002060437
+Janjanam, Karthikeya        - 1002115909
+Navadiya, Meet              - 1002040672
+Jillella, Sai Charan Reddy  - 1002071745
+Kanna, Karthik Reddy        - 1002086508 
+*/
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/students.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 150%;
+    color: #797979;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 74, 153, 0.8);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e1e1e1;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main Styles */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+/* Jobsearch Styles */
+#jobsearch {
+    padding: 20px;
+    background-color: rgba(179, 179, 179, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    /* Add margin-bottom to create a gap */
+}
+
+/* Candidate Jobsearch Styles */
+#jobsearch {
+    padding: 20px;
+    background-color: rgba(179, 179, 179, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Search Division Styles */
+.search {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    width: 75%;
+    margin-right: 10px;
+    /* Add some spacing between the input and button */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+.search button {
+    width: auto;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+/* Filter Division Styles */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Add this line to center align the filters */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filters select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Job Posting Styles */
+#jobsearch p {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.job-posting {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #949494;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-info {
+    flex-grow: 1;
+}
+
+.job-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.job-info p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #797979;
+}
+
+.job-actions {
+    display: flex;
+}
+
+.job-actions button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.job-actions button:last-child {
+    margin-right: 0;
+}
+
+/* Job Applied Section Styles */
+#jobsearch {
+    padding: 20px;
+    background-color: rgba(179, 179, 179, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    /* Add margin-bottom to create a gap */
+}
+
+#jobsearch .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#jobsearch .search input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+#jobsearch .search button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#jobsearch .job-applied table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jobsearch .job-applied th,
+#jobsearch .job-applied td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#jobsearch .job-applied th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+#jobsearch .job-applied tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#jobsearch .job-applied tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Footer Styles */
+footer {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    /* Change the text color to improve visibility */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    margin-top: -40px;
+    /* Adjust the negative margin value as needed */
+}
